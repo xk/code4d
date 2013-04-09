@@ -1,1 +1,0 @@
-  // Really bad, much better with regex, HAS TO BE CHANGE QUICKLY (CHG_PFO_1.97)C_TEXT($0;$1)$0:=Replace string(Replace string($1;Char(Carriage return);"";*);Char(Line feed);"";*)

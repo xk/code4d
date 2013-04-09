@@ -1,1 +1,0 @@
-$err:=SVN_Add ("pfoubert";"QE9fj8gS4rk2";"/Users/pfoubert/Desktop/_CardioPRO/_Projetsvn/code4d/trunk/test_svn_add.txt")If ($err="1")  //OKElse ALERT($err)End if 
