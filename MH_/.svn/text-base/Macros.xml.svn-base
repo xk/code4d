@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+<macros>
+
+<!--
+these macro are called when methods are loaded/modified/saved & closed. They launch a 4D method "MACRO_CALL_BACK" in the component
+-->
+<macro name="MH_OnCreate" method_event="on_create" version="2" type_ahead="false" in_menu="false">
+<text><method>MACRO_CALL_BACK("on_create";"<method_name/>";"<user_os/>")</method></text>		<!-- Called whenever a method is created-->
+</macro>
+
+<macro name="MH_OnLoad" method_event="on_load" version="2" type_ahead="false" in_menu="false">
+<text><method>MACRO_CALL_BACK("on_load";"<method_name/>";"<user_os/>")</method></text>		<!-- Called whenever a method is loaded-->
+</macro>
+
+<macro name="MH_OnSave" method_event="on_save" version="2" type_ahead="false" in_menu="false">
+<text><method>MACRO_CALL_BACK("on_save";"<method_name/>";"<user_os/>")</method></text>		<!-- Called whenever a method is saved-->
+</macro>
+
+<macro name="MH_OnClose" method_event="on_close" version="2" type_ahead="false" in_menu="false">
+<text><method>MACRO_CALL_BACK("on_close";"<method_name/>";"<user_os/>")</method></text>		<!-- Called whenever a method is closed-->
+</macro>
+
+</macros>
